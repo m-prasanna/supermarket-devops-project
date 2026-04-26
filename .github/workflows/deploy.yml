@@ -19,7 +19,7 @@ jobs:
         with:
           host: ${{ 65.2.183.56 }}
           username: ubuntu
-          key: ${{ MIIEowIBAAKCAQEA6Xt3nEO/dILl/IxCMADWK4GQsU895/ZuAHEIRAuWeT4bBYUi
+          key: ${{MIIEowIBAAKCAQEA6Xt3nEO/dILl/IxCMADWK4GQsU895/ZuAHEIRAuWeT4bBYUi
             rmzG2J0WlGsKMIDJsJ3nu2JXJrHJFXtJTqVhBC8IdQjWJ/3RIVN72hQaZIOAcG9r
             d3+rNZYX8J6GbO+Wms50AIH5mVltqHJ3TQ9gmu0C2Z5xP89+ruJgQVu/fR7mkc9d
             jm+AaZ0fn1+OB68NqvUN62EVP91xzwyBuCw19oHf+6io30qwXeIdEGts+ZaZIEQ5
@@ -43,7 +43,7 @@ jobs:
             rDsyBGc1gznRq+DxsVGIFdxq0n1B4IpSc1VVce9SFzokLGdBet5XyhMPrz0SxcUE
             ZYfkoQKBgH6XxzmhDbpEz67O+wlRcTiw/Z7KIgytRmlMGnV7zRYzNWmIjrzfJcmT
             xzJ/59lw6x38quTZuvTIgr3HxBulbHLdnbl7KADK0Z74tUddstx/iKpGxNhNGype
-            LjR356TqW1a8I4xg3WRL8aRABzsjUx2BW9gRQGIpnq3JmwFGsFoF }}
+            LjR356TqW1a8I4xg3WRL8aRABzsjUx2BW9gRQGIpnq3JmwFGsFoF}}
           port: 22
           script: |
             echo "Connected to EC2 Server"
