@@ -17,33 +17,9 @@ jobs:
       - name: Deploy Application to EC2 Server
         uses: appleboy/ssh-action@v1.0.3
         with:
-          host: ${{ 65.2.183.56 }}
+          host: ${{secrets.EC2_HOST}}
           username: ubuntu
-          key: ${{MIIEowIBAAKCAQEA6Xt3nEO/dILl/IxCMADWK4GQsU895/ZuAHEIRAuWeT4bBYUi
-            rmzG2J0WlGsKMIDJsJ3nu2JXJrHJFXtJTqVhBC8IdQjWJ/3RIVN72hQaZIOAcG9r
-            d3+rNZYX8J6GbO+Wms50AIH5mVltqHJ3TQ9gmu0C2Z5xP89+ruJgQVu/fR7mkc9d
-            jm+AaZ0fn1+OB68NqvUN62EVP91xzwyBuCw19oHf+6io30qwXeIdEGts+ZaZIEQ5
-            9qfYxXcJWI3F6XxP8e8Yk6pXU4i3mlfNziu6MX8vE90NnLqnVYhP542uR9W0I/kJ
-            UOB/65zeyeZpLrgfh6HXgCyCoiHi6CbhDRijAQIDAQABAoIBAFm5YdjCTDPZDcrE
-            l7bcy3ECpHkPC6o1kEZJKbUEgvnqvPWdGRvQn4WksIWusMa850UhGWlwPC+ZiL3h
-            l+VKNoMmE+jt0Wai6pgU/fZrXU0dH+GVX8YXYNMB8Ac+1EfOtqCdEAUV7bZZoINo
-            IaKSczx2Mm8wrTKpaXSJeBYFzQumdVm/b6+4PemGa602YHYo2eRylUBdjBsaxxIH
-            wqkFkgwpF5L3YWIZnSfCKgIm3+sUrAHxfEWfk4wkLHe9q5Rz09N4O6mwAZskhr9J
-            R/K2C0W5qyqGYu8kDh4ja0Hj8aeEv0UUuHWs053ljnrPFfKeB5RgefrXcvDUiLeC
-            e1nmsDECgYEA+xzd6q7BiXhMwVb5cJkSQEowKnA90hSRpk7vHStfjuzx7YRZIfcj
-            /9flXsKH/083hS8H2fljZhj1wNWxA7RA94nfIIrrKCWl7jv/4NZoqltvMn0QS9S8
-            hBPdRl78/c/Ond1rkS1LSojcEGliBC2qm0p8NujqdUK4nRZF/mPAAOUCgYEA7gbC
-            VJ8ssVOQNhMdVArAIm8Q7JluS0OKTnnA3az9KxShXLKU+rgu/dfUsk59Qu7oEVgT
-            /PPoOze5hM89NX7htZ/q0LUarKwPWaEGLZh3m95Y64pvEEIU/uUnKl9qhnP/k8/4
-            aukcs7yeQy1CtlNL2FFan3L8WCmNqtEQMZZOo+0CgYA+Zdzq/QPQghkojdEr3o1/
-            di/jy8JA2qWamtCmAeob3Nr89z8ixoOmhmJTmqkqkuer65Ta4DKH4znl8fOrhPYD
-            zLmqH3rxnfFOcpBRsVWOx2upMxSCk1lIxJreaqoY87NW3PdmuseTvNBaL6WQfjx/
-            nBGjn1rrSmoPdsJrxSOn1QKBgQCmZqNEdWLRNRIEO6itMDbR28OBJGIuy7DM2+Ex
-            F9aFX47PNylffZOccl6HqMd5G3uxZFnU5M7dVz+i0R6BX4p7ZqjJ71IOlNrGVgPz
-            rDsyBGc1gznRq+DxsVGIFdxq0n1B4IpSc1VVce9SFzokLGdBet5XyhMPrz0SxcUE
-            ZYfkoQKBgH6XxzmhDbpEz67O+wlRcTiw/Z7KIgytRmlMGnV7zRYzNWmIjrzfJcmT
-            xzJ/59lw6x38quTZuvTIgr3HxBulbHLdnbl7KADK0Z74tUddstx/iKpGxNhNGype
-            LjR356TqW1a8I4xg3WRL8aRABzsjUx2BW9gRQGIpnq3JmwFGsFoF}}
+          key: ${{secrets.EC2_SSH_KEY}}
           port: 22
           script: |
             echo "Connected to EC2 Server"
